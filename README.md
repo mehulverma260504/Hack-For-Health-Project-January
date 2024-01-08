@@ -8,10 +8,8 @@
 - [Flow Chart / Archeticture](#Flow-chart)
 - [Directory Tree](#directory-tree)
 - [Quick start](#Quick-start)
-- [Screenshots](#screenshots)
 - [Technical Aspect](#technical-aspect)
 - [Team](#team)
-- [License](#license)
 
 ## Problem Statment
 
