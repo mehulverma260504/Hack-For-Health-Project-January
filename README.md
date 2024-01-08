@@ -57,6 +57,10 @@ Front-end UX/UI, Back-end Machine learning, Deep learning flow chart
 
 ```
 
+## Installation
+
+This project was made using [python 3.6.8](https://www.python.org/downloads/release/python-368/). Download and install the same version before running this program.
+
 ## Quick start
 
 **Step-1:** Download the files in the repository.<br>
