@@ -7,6 +7,7 @@
 - [Problem statment / Why this topic?](#Problem-statment)
 - [Flow Chart / Archeticture](#Flow-chart)
 - [Directory Tree](#directory-tree)
+- [Installation](#installation)
 - [Quick start](#Quick-start)
 - [Technical Aspect](#technical-aspect)
 - [Team](#team)
