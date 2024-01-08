@@ -17,6 +17,7 @@ importlib-metadata
 itsdangerous
 Jinja2
 joblib
+Keras
 Keras-Applications
 Keras-Preprocessing
 Markdown
