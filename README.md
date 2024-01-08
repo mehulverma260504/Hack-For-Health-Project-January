@@ -30,6 +30,7 @@ Front-end UX/UI, Back-end Machine learning, Deep learning flow chart
 ## Directory Tree
 
 ```
+├── data
 ├── Pyhon notebooks code files
 ├── trained models.pkl file
 ├── static logos
@@ -51,7 +52,6 @@ Front-end UX/UI, Back-end Machine learning, Deep learning flow chart
 │         └── Pneumonia
 ├── app.py
 ├── readme.md
-├── runtime.txt
 └── requirements.txt
 
 

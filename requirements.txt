@@ -32,6 +32,7 @@ pyasn1-modules
 requests
 requests-oauthlib
 rsa
+seaborn
 scikit-learn
 scipy
 six
