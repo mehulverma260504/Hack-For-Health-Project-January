@@ -30,9 +30,13 @@ def predict(values, dic):
         values = np.asarray(values)
         return model.predict(values.reshape(1, -1))[0]
 
+# @app.route("/")
+# def home():
+#     return render_template('home.html')
+
 @app.route("/")
 def home():
-    return render_template('home.html')
+    return render_template('index1.html')
 
 @app.route("/diabetes", methods=['GET', 'POST'])
 def diabetesPage():
