@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">About Us</a>
+                        <a class="nav-link active" href="{{ url_for('aboutUs')}}">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -32,35 +32,28 @@
                             Services
                         </a>
                         <ul class="dropdown-menu active">
-                            <li><a class="dropdown-item" href="#">Breast Cancer</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('cancerPage') }}">Breast Cancer</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Diabetes</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('diabetesPage') }}">Diabetes</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Heart</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('heartPage') }}">Heart</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Kidney</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('kidneyPage') }}">Kidney</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Liver</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('liverPage') }}">Liver</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Malaria</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Pneumonia</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('malariaPage') }}">Malaria</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact Us</a>
                     </li>
             </div>
         </div>
