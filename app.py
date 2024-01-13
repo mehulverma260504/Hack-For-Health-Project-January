@@ -34,6 +34,10 @@ def predict(values, dic):
 def home():
     return render_template('index1.html')
 
+@app.route("/contactus")
+def aboutUs():
+    return render_template('contact.html')
+
 @app.route("/aboutus")
 def aboutUs():
     return render_template('about-us.html')
