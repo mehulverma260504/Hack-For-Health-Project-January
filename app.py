@@ -55,9 +55,9 @@ def diabetes1Page():
     return render_template("diabetes1.html")
 
 
-@app.route("/templates/breast_cancer1.html", methods=["GET", "POST"])
+@app.route("/breast_cancer1", methods=["GET", "POST"])
 def cancerPage():
-    return render_template("breast_cancer.html")
+    return render_template("breast_cancer1.html")
 
 
 @app.route("/cancer", methods=["GET", "POST"])
