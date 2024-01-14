@@ -6,6 +6,7 @@ from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
 
+
 def predict(values, dic):
     if len(values) == 8:
         model = pickle.load(open("models/diabetes.pkl", "rb"))
@@ -28,45 +29,61 @@ def predict(values, dic):
         values = np.asarray(values)
         return model.predict(values.reshape(1, -1))[0]
 
+
 @app.route("/")
 def home():
     return render_template("index1.html")
+
 
 @app.route("/contactus")
 def contactUs():
     return render_template("contact.html")
 
+
 @app.route("/aboutus")
 def aboutUs():
     return render_template("about-us.html")
+
 
 @app.route("/diabetes", methods=["GET", "POST"])
 def diabetesPage():
     return render_template("diabetes.html")
 
+
 @app.route("/diabetes1", methods=["GET", "POST"])
 def diabetes1Page():
     return render_template("diabetes1.html")
 
-@app.route("/cancer", methods=["GET", "POST"])
+
+@app.route("/templates/breast_cancer1.html", methods=["GET", "POST"])
 def cancerPage():
     return render_template("breast_cancer.html")
+
+
+@app.route("/cancer", methods=["GET", "POST"])
+def cancer1Page():
+    return render_template("breast_cancer1.html")
+
 
 @app.route("/heart", methods=["GET", "POST"])
 def heartPage():
     return render_template("heart.html")
 
+
 @app.route("/kidney", methods=["GET", "POST"])
 def kidneyPage():
     return render_template("kidney.html")
+
 
 @app.route("/liver", methods=["GET", "POST"])
 def liverPage():
     return render_template("liver.html")
 
+
 @app.route("/malaria", methods=["GET", "POST"])
 def malariaPage():
     return render_template("malaria.html")
+
 
 @app.route("/predict", methods=["POST", "GET"])
 def predictPage():
@@ -80,6 +97,7 @@ def predictPage():
         return render_template("home.html", message=message)
 
     return render_template("predict.html", pred=pred)
+
 
 @app.route("/malariapredict", methods=["POST", "GET"])
 def malariapredictPage():
@@ -97,6 +115,7 @@ def malariapredictPage():
             message = "Please upload an Image"
             return render_template("malaria.html", message=message)
     return render_template("malaria_predict.html", pred=pred)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
