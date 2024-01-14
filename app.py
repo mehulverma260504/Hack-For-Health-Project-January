@@ -51,7 +51,7 @@ def diabetesPage():
     return render_template("diabetes.html")
 
 
-@app.route("/diabetes1.html", methods=["GET", "POST"])
+@app.route("/diabetes1", methods=["GET", "POST"])
 def diabetes1Page():
     return render_template("diabetes1.html")
 
