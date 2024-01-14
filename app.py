@@ -47,42 +47,32 @@ def aboutUs():
 
 @app.route("/diabetes", methods=["GET", "POST"])
 def diabetesPage():
-    return render_template("diabetes.html")
-
-
-@app.route("/diabetes1", methods=["GET", "POST"])
-def diabetes1Page():
     return render_template("diabetes1.html")
 
 
-@app.route("/breast_cancer1", methods=["GET", "POST"])
-def cancerPage():
-    return render_template("breast_cancer1.html")
-
-
 @app.route("/cancer", methods=["GET", "POST"])
-def cancer1Page():
+def cancerPage():
     return render_template("breast_cancer1.html")
 
 
 @app.route("/heart", methods=["GET", "POST"])
 def heartPage():
-    return render_template("heart.html")
+    return render_template("heart1.html")
 
 
 @app.route("/kidney", methods=["GET", "POST"])
 def kidneyPage():
-    return render_template("kidney.html")
+    return render_template("kidney1.html")
 
 
 @app.route("/liver", methods=["GET", "POST"])
 def liverPage():
-    return render_template("liver.html")
+    return render_template("liver1.html")
 
 
 @app.route("/malaria", methods=["GET", "POST"])
 def malariaPage():
-    return render_template("malaria.html")
+    return render_template("malaria1.html")
 
 
 @app.route("/predict", methods=["POST", "GET"])
@@ -94,7 +84,7 @@ def predictPage():
             pred = predict(to_predict_list, to_predict_dict)
     except:
         message = "Please enter valid Data"
-        return render_template("home.html", message=message)
+        return render_template("index1.html", message=message)
 
     return render_template("predict.html", pred=pred)
 
@@ -113,8 +103,8 @@ def malariapredictPage():
                 pred = np.argmax(model.predict(img)[0])
         except:
             message = "Please upload an Image"
-            return render_template("malaria.html", message=message)
-    return render_template("malaria_predict.html", pred=pred)
+            return render_template("malaria1.html", message=message)
+    return render_template("malaria1_predict.html", pred=pred)
 
 
 if __name__ == "__main__":
