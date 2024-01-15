@@ -1,0 +1,9 @@
+[railway]
+name = "Your Flask Project Name"
+
+[[services]]
+name = "web"
+image = "python:3.6.8"
+command = "flask run"
+env = "FLASK_APP=app.py,FLASK_ENV=development,PORT=5000"
+port = 5000
